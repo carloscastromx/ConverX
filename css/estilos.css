@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+* {
+    margin:0px;
+    padding:0px;
+    font-family: 'Roboto';
+    box-sizing: border-box;
+}
+body{
+    background: #0f4c81;  /* antiguos navegadores */
+    background: -webkit-linear-gradient(to right, #0f4c81, #0575E6);  /* Chrome / Safari */
+    background: linear-gradient(to right, #0f4c81, #0575E6); /* Explorer / Opera */
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#margen {
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+   margin: auto;
+   background: white;
+   padding: 30px;
+   border-radius: 20px;
+   width: 100%;
+   max-width: 1000px;
+   height: 100%;
+   min-height: 400px;
+   max-height: 50vh;
+}
+img.logo{
+    display: block;
+    margin: auto;
+    width: 200px;
+    height: auto;
+}
+p.descripcion{
+    text-align: center;
+    margin: auto;
+}
+p.input{
+    line-height: 38px;
+    font-size: 18px;
+    margin-right: 20px;
+    display: inline-block;
+}
+.box, .box-2, .box-3{
+   width: 100%;
+   text-align: center;
+}
+.box-2{
+    margin: 15px 0;
+}
+input[type="text"]{
+    margin-right: 20px;
+    height: 25px;
+    padding: 5px;
+}
+#btn-convertir{
+    padding: 12px 32px;
+    background: #0f4c81;
+    color: white;
+    border: 1px solid #0f4c81;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+#btn-convertir:hover{
+    background: white;
+    color: #0f4c81;
+}
+select{
+    height: 25px;
+}

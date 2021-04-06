@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ConverX</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/estilos.css">
+		<link rel="stylesheet" href="css/bootstrap-grid.css">
+	</head>
+	<body>
+		<div id="margen">
+			<img src="img/converx.png" alt="ConverX" class="logo"><br>
+			<p class="descripcion">Esta herramienta permite realizar la conversión de divisas internacionales usando las tasas de cambio más recientes</p>
+			<div class="box row">
+				<div class="col-md-5" style="text-align: right;"><p class="input">Cantidad a convertir: </p></div>
+				<div class="col-md-2"><input type="text" required id="source"></div>
+				<div class="col-md-5" style="text-align: left; padding-left: 35px;">
+					<select>
+						<option value="AUD">🇦🇺 Dolar Australiano</option>
+						<option value="CAD">🇨🇦 Dolar Canadiense</option>
+						<option value="MXN">🇲🇽 Peso Mexicano</option>
+					</select>
+				</div>
+			</div>
+			<div class="box-2 row">
+				<div class="col-md-5" style="text-align: right;"><p class="input">Resultado: </p></div>
+				<div class="col-md-2"><input type="text" required id="target" disabled></div>
+				<div class="col-md-5" style="text-align: left; padding-left: 35px;">
+					<select>
+						<option value="AUD">🇦🇺 Dolar Australiano</option>
+						<option value="CAD">🇨🇦 Dolar Canadiense</option>
+						<option value="MXN">🇲🇽 Peso Mexicano</option>
+					</select>
+				</div>
+			</div>
+			<div class="box-3 row">
+				<div class="col-md-12">
+					<button id="btn-convertir">Convertir</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	</body>
+</html>
