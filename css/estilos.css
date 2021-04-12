@@ -69,9 +69,6 @@ input[type="text"]{
     background: white;
     color: #0f4c81;
 }
-.dropdown{
-    padding-left: 35px;
-}
 select{
     height: 25px;
 }
