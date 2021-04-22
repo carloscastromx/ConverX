@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="css/estilos.css">
 		<link rel="stylesheet" href="css/bootstrap-grid.css">
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 	</head>
 	<body>
 		<div id="margen">
@@ -14,7 +15,7 @@
 				<div class="col-md-5" style="text-align: right;"><p class="input">Cantidad a convertir: </p></div>
 				<div class="col-md-2"><input type="text" required id="source"></div>
 				<div class="col-md-5 dropdown" style="text-align: left;">
-					<select>
+					<select id="select-base">
 						<option value="AUD">🇦🇺 Dolar Australiano</option>
 						<option value="CAD">🇨🇦 Dolar Canadiense</option>
 						<option value="MXN">🇲🇽 Peso Mexicano</option>
@@ -25,7 +26,7 @@
 				<div class="col-md-5" style="text-align: right;"><p class="input">Resultado: </p></div>
 				<div class="col-md-2"><input type="text" required id="target" disabled></div>
 				<div class="col-md-5 dropdown" style="text-align: left;">
-					<select>
+					<select id="select-dest">
 						<option value="AUD">🇦🇺 Dolar Australiano</option>
 						<option value="CAD">🇨🇦 Dolar Canadiense</option>
 						<option value="MXN">🇲🇽 Peso Mexicano</option>
@@ -34,10 +35,13 @@
 			</div>
 			<div class="box-3 row">
 				<div class="col-md-12">
+					<p class="resultado"></p>
+					<p class="error"></p>
 					<button id="btn-convertir">Convertir</button>
 				</div>
 			</div>
 		</div>
 	</div>
+	<script src="scripts/script.js"></script>
 	</body>
 </html>
