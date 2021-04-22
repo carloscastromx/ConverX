@@ -72,6 +72,11 @@ input[type="text"]{
 select{
     height: 25px;
 }
+p.resultado, p.error{
+    display: none;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
 @media (min-width: 300px) and (max-width: 1000px){
     #margen{
         max-width: 80vw;
