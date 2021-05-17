@@ -57,6 +57,9 @@ input[type="text"]{
     height: 25px;
     padding: 5px;
 }
+input#target{
+    font-weight: 500;
+}
 #btn-convertir{
     padding: 12px 32px;
     background: #0f4c81;
