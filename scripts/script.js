@@ -4,14 +4,22 @@ const apikey = 'ac6ae4de1b0bdeb3578e1f6456650875';
 const btn = document.querySelector("#btn-convertir");
 const resultp = document.querySelector(".resultado");
 const errortxt = document.querySelector(".error");
+const inputdest = document.querySelector("#target");
 function initcheck(x,y){
-    if(x == y){
-        errortxt.textContent = "La divisa a convertir debe ser diferente de la divisa base";
+    if(isNaN(parseFloat(document.querySelector("#source").value))){
+        errortxt.textContent = "Introduzca una cantidad válida.";
         errortxt.style.display = "block";
+        errortxt.style.color = "#C00000";
     } else{
-        errortxt.style.display = "none";
-        errortxt.textContent = " ";
-        converx(x,y);
+        if(x == y){
+            errortxt.textContent = "La divisa a convertir debe ser diferente de la divisa base";
+            errortxt.style.display = "block";
+            errortxt.style.color = "#C00000";
+        }else{
+            errortxt.style.display = "none";
+            errortxt.textContent = " ";
+            converx(x,y);
+        }
     }
 }
 function converx(b,d){
@@ -21,7 +29,11 @@ function converx(b,d){
         success: function(json) {
         var r = json.rates[d];
         resultp.textContent="1 " + b + " = " + r + " " + d;
+        resultp.style.color = "#0f4c81";
+        var valorconv = document.querySelector("#source").value;
         resultp.style.display = "block";
+        var conversion = parseFloat(valorconv) * parseFloat(r);
+        inputdest.setAttribute("value", conversion);
         }
     });
 }
